@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Jeremiah Cooley 07/21/2016 -->
+<!-- Final Project Page 1 -->
+<html lang="en">
+	<head>
+		<title>CSS Best Practices :: Coding Practices</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" media="screen" href="../css/styles.css" />
+		<link rel="stylesheet" media="print" href="../css/print.css" />
+		<link rel="icon" type="image/x-icon" href="../image.ico" />
+		<!--[if lt IE 9] >
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="top">
+				<h1>CSS Best Practices</h1>
+				<h2>Coding Practices</h2>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="../final1.html">Home</a></li>
+					<li><a href="final2.html">Coding Practices</a></li>
+					<li><a href="final3.html">Style Guidelines</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<h3>Familiarize yourself with the CSS layout logic</h3>
+				<p>If you don't understand how CSS is laid out you are not
+				going to be able to effectively structure your site. The 
+				layout model is a grid going from top-to-bottom then left-to-right.
+				Certain CSS display rules will alter this model.</p>
+				<h3>Keep your styles scalable</h3>
+				<table>
+					<caption>Useful CSS3 Units</caption>
+					<tr>
+						<th>Unit</th>
+						<th>Description</th>
+						<th>Example</th>
+						<th>Notes</th>
+					</tr>
+					<tr>
+						<td>pt</td>
+						<td>Measures size in points. Points are 1/72 inches.</td>
+						<td class="unit-example"><code>font-size: 18pt;</code></td>
+						<td>Great for things intended to be printed</td>
+					</tr>
+					<tr>
+						<td>px</td>
+						<td>Measures size in pixels</td>
+						<td class="unit-example"><code>margin: 20px;</code></td>
+						<td>Limit use; does not scale down well to mobile</td>
+					</tr>
+					<tr>
+						<td>em</td>
+						<td>Measures size in em spaces. 2em equals double font size.</td>
+						<td class="unit-example"><code>font-size: 1.2em;</code></td>
+						<td>Great for scalable text.</td>
+					</tr>
+					<tr>
+						<td>%</td>
+						<td>Measure sizes as percentage of something else, usually parent element.</td>
+						<td class="unit-example"><code>width: 100%;</code></td>
+						<td>Great for scaling objects relative to each other, i.e. headings and paragraphs.</td>
+					</tr>
+				</table>
+				<p>Using <code>px</code> measurements was pretty popular when all of your
+				users could be expected to be using a desktop monitor. With	the proliferation
+				of mobile devices, this assumption went out the window. Use	<code>em</code> and 
+				percentage based measurements which scale better on alternative	screens. <code>px</code>
+				measurements can still be effective if you use small amounts (less than 10px is a 
+				good rule of thumb).</p>
+				<h3>Consider using a CSS reset</h3>
+				<p>Every browser has its own default style sheet. While these are typically minimal,
+				slight quirks in each one can lead to a malformed site. You can use a CSS reset to 
+				level the field.</p>
+				<h3>Consider designing for mobile first</h3>
+				<p>It's a lot harder to get CSS right for mobile devices. If you design your site for mobile
+				first, you have a lot more leeway in scaling it up to larger devices.</p>
+				<h3>Utilize Developer Tools</h3>
+				<p>Most modern browser come with a set of development tools that will help you design and
+				troubleshoot your site. Typically these can be accessed by pressing the <code>F12</code> key.
+				They typically support the following features:</p>
+					<a href="../img/devtools.png">
+						<figure>
+								<img src="../img/devtools.png" alt="Microsoft Edge Developer Tools"/>
+								<figcaption>Microsoft Edge Developer Tools</figcaption>
+						</figure>
+					</a>
+				<ul>
+					<li>Show HTML and CSS syntax errors</li>
+					<li>Graphically display CSS box model attributes</li>
+					<li>Allow temporary modification of CSS and HTML for testing purposes</li>
+					<li>Show full derived CSS properties</li>
+					<li>Performance Benchmarking</li>
+				</ul>
+				<p>This site was designed with the assistance of Microsoft Edge developer tools.</p><br />
+				<h3>Utilize CSS minifiers</h3>
+				<p>This doesn't really help you develop the CSS, but it is an important step in rolling out
+				a website. A minifier will decrease file size allowing for increased bandwidth efficiency.
+				Mobile users will love you for this.</p>
+				<h3>Horizontal Centering &mdash; The Smart Way</h3>
+				<p>To horizontally center elements, use the following:<br />
+				<code>selector {margin: 0 auto;}</code><br />
+				setting the left and right margins to auto will keep the element horizontally centered
+				with respect to its parent element.</p>
+				<h3>Use the right DOCTYPE</h3>
+				<p>Modern browsers are very smart and can make a lot of guesses about what you actually
+				wanted your code to do, but if they have no idea what language you are speaking, they
+				can't really make any guesses. The HTML5 DOCTYPE is as follows:<br />
+				<code>&lt;!DOCTYPE html&gt;</code></p>
+				<h3>Avoid using browser specific CSS</h3>
+				<p>Frequently in the past, and occasionally still today, it was necessary to use 
+				browser-specific CSS rules to create the desired style behavior. However these are
+				largely obsolete and make CSS debugging troublesome across different browsers.</p>
+				<h3>Validate your CSS</h3>
+				<p>We all make mistakes. Unfortunately, browser developers are very forgiving of
+				our mistakes and one can end up with an abomination of a site that does not appear
+				at all as expected. Utilize the w3c's CSS validator to make sure your CSS is up to
+				scratch.</p>
+				<a class="top" href="#top">Return to top of page</a>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="../final1.html">Home</a></li>
+					<li><a href="final2.html">Coding Practices</a></li>
+					<li><a href="final3.html">Style Guidelines</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				<p>&copy; 2016 Jeremiah Cooley</p>
+			</footer>
+		</div>
+	</body>
+</html>

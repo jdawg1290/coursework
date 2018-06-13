@@ -1,0 +1,115 @@
+/* Jeremiah Cooley 07/21/2016 */
+/*Page level CSS */
+body {
+	background-color: #CCCCCC;
+	font: arial, "TimesNewRoman", serif;
+}
+#wrapper { /* center and width-limit the site */
+	margin-right:auto;
+	margin-left:auto;
+	width: 80%;
+	max-width:1280px;
+}
+/* Header level CSS */
+header {
+	background-image: url(../img/htmlcss.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 15%;
+	padding-bottom: 10px;
+	background-color: #FFFFFF;
+	opacity: 0.6; /* CSS level 3 opacity property, gives a nice effect to the header*/
+}
+header h1,h2 {
+	margin: 10px 0;
+}
+/* Nav bar level CSS */
+nav {
+	float: left;
+	width: 15%;
+	margin-top: 0;
+	padding-top: 0;
+	opacity: 0.8;
+}
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0 auto;
+}
+nav li {
+	padding: 10px;
+	border: 1px solid #000000;
+	text-align: center;
+}
+nav li:hover, nav li:active {
+	background-color: #CCCCFF;
+}
+nav a {
+	text-decoration: none;
+	color: #000000;
+	white-space: nowrap;
+}
+/* main body CSS */
+main {
+	margin-left: 16%;
+	margin-top: 5px;
+	display: block;
+	background-color: #CCCCCC;
+}
+/* table CSS */
+table,th,td {
+	border: 1px solid #000000;
+}
+td,th {
+	margin: 2px;
+}
+figure {
+	float: right;
+	clear: right;
+	margin: 10px;
+	font-size: 0.8em;
+}
+figure img {
+	width: 12em;
+	height: 6em;
+}
+/* footer CSS */
+footer {
+	font-size: 80%;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	background-color: #CCCCCC;
+}
+footer ul {
+	list-style-type: none;
+	margin-top: 0;
+}
+footer li {
+	display: inline;
+}
+footer a {
+	text-decoration: none;
+}
+footer p{
+	text-align: center;
+}
+/* id rules */
+#thankyou {
+	width: 25%;
+	height: 25%;
+	float: right;
+	clear: right;
+	margin: 10px;
+}
+#full-logo {
+	float: right;
+	clear: right;
+}
+/* class rules */
+.bold {
+	font-weight: bold;
+}
+.unit-example {
+	white-space: nowrap;
+}

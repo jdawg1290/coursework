@@ -1,0 +1,39 @@
+/* Jeremiah Cooley 07/21/2016 */
+/* Full document CSS */
+body {
+	font: arial, "Times New Roman", serif;
+}
+/* Navbar CSS */
+nav {
+	display: none;
+}
+/* main section CSS */
+figure {
+	float: right;
+	clear: right;
+	margin: 10px;
+	font-size: 0.8em;
+}
+figure img {
+	width: 12em;
+	height: 7em;
+}
+/* footer CSS */
+footer ul {
+	display: none;
+}
+/* class CSS */
+.top {
+	display: none;
+}
+/* id CSS */
+#thankyou {
+	width: 25%;
+	height: 25%;
+	float: right;
+	clear: right;
+	margin: 10px;
+}
+#full-logo {
+	display: none;
+}

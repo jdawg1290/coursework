@@ -1,0 +1,55 @@
+/*
+    WEB 114 Final Project
+    Author: Jeremiah Cooley
+    File: main.css
+    Date: 05 - 02 - 2017
+*/
+
+body {
+    background-color: lightblue;
+}
+
+#bodyWrapper {
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+}
+
+nav button {
+    box-shadow: 10px 10px 5px #999999;
+    width: 15em;
+    height: 2em;
+}
+
+main {
+    min-height: 15em;
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 64em) {
+    #bodyWrapper {
+        width: 100%;
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    #bodyWrapper {
+        width: 100%;
+        font-size: 1.8em;
+    }
+    
+    nav button {
+        display: block;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    input[type="text"],input[type="number"] {
+        display: block;
+    }
+}

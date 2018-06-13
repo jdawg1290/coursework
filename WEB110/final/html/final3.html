@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Jeremiah Cooley 07/21/2016 -->
+<!-- Final Project page 2 -->
+<html lang="en">
+	<head>
+		<title>CSS Best Practices :: Style Guidelines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" media="screen" href="../css/styles.css" />
+		<link rel="stylesheet" media="print" href="../css/print.css" />
+		<link rel="icon" type="image/x-icon" href="../image.ico" />
+		<!--[if lt IE 9] >
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="top">
+				<h1>CSS Best Practices</h1>
+				<h2>Style Guidelines</h2>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="../final1.html">Home</a></li>
+					<li><a href="final2.html">Coding Practices</a></li>
+					<li><a href="final3.html">Style Guidelines</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<h3>Use concise naming</h3>
+				<p>Use class and id naming that makes it clear what the rule is 
+				likely going to be applied to. <code>#button</code> is not a good 
+				identifier as it could be applied to any number of buttons on your
+				page. <code>#button-nav-home</code> would be very clear that it is likely
+				the home button on your navigation bar.</p>
+				<h3>Do not mix style with naming</h3>
+				<p>Avoid using style information in the name. The next person who works
+				on the website is going to be very confused if he or she sees an id of
+				<code>#button-green</code> and there are no green buttons on the site.
+				Styles change over time so you shouldn't use style data in names.</p>
+				<h3>Pick an organization convention (and stick with it)</h3>
+				<p>CSS doesn't really care how you organize your code. For your own sanity however,
+				consider implementing a consistent organization strategy. It may be alphabetical, or
+				top-to-bottom. Most importantly, <span class="bold">stick with this convention.</span></p>
+				<p>Here is an example convention:</p>
+				<ol>
+					<li>Body level selectors</li>
+					<li>Header level selectors</li>
+					<li>Nav level selectors</li>
+					<li>Main level selectors</li>
+					<li>Footer level selectors</li>
+					<li>Class selectors</li>
+					<li>ID selectors</li>
+				</ol>
+				<h3>Keep your code clean</h3>
+				<p>During site development you may end up with duplicate selectors and rules. Try to keep these
+				cleaned up as you go. It can be very confusing when you have a <code>p</code> selector defined
+				in two different places and your site starts doing strange things.</p>
+				<h3>Combine selectors with identical rulesets</h3>
+				<p>If you have two or more selectors doing the exact same thing, combine the rule. This will save
+				space and make your CSS more readable.</p>
+				<a href="../img/multiclass.png">
+					<figure>
+						<img src="../img/multiclass.png" alt="paragraph with two classes"/>
+						<figcaption>A paragraph element with <br />two classes assigned.</figcaption>
+					</figure>
+				</a>
+				<h3>Use multiple classes</h3>
+				<p>Already have two awesome rulesets that both do exactly what you need? Use both of them. You can
+				declare as many classes as you like for a tag &mdash; just separate them with a space.
+				</p>
+				<h3>Utilize shorthand notation</h3>
+				<p>Have you ever seen one of these monstrosities?<br />
+				<code>p {<br />
+				margin-right: 5px;<br />
+				margin-left: 6px;<br />
+				margin-top: 10px;<br />
+				margin-bottom: 10px;<br />
+				}</code><br />
+				Combine it to save space and improve readability:<br />
+				<code>p {margin: 10px 5px 10px 6px;}</code><br /></p>
+				<h3>Comment your Code</h3>
+				<p>This might be the most underrated tip on this entire site. When you are actively coding CSS
+				you know what you are doing. But if you ever have to shelve your project to work on another time,
+				or if someone else has to take over your work for you, nobody is going to have any idea what is going
+				on. I'm quite fond of a quote:</p>
+				<blockquote>Always assume your successor is an axe murderer and knows where you live.</blockquote>
+				<h3>Avoid overusing <code>&lt;div&gt;s</code></h3>
+				<p>The <code>div</code> element is a very powerful and versatile for creating zones of content to style.
+				However if a <code>div</code> is used for everything your style sheet will very quickly become overcluttered.
+				Utilize the range of semantic tags added in HTML5.</p>
+				<h3>Avoid permanently hiding elements with CSS</h3>
+				<p>Some coders try to be clever with things such as <code>h1</code> elements by setting massive negative
+				margins or using <code>display: none;</code>. This can cause problems. Your CSS will be cluttered with
+				rules that shouldn't really be there, and some search engines penalize sites for having non-rendering
+				content.</p>
+				<a class="top" href="#top">Return to top of page</a>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="../final1.html">Home</a></li>
+					<li><a href="final2.html">Coding Practices</a></li>
+					<li><a href="final3.html">Style Guidelines</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				<p>&copy; 2016 Jeremiah Cooley</p>
+			</footer>
+		</div>
+	</body>
+</html>

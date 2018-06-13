@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Jeremiah Cooley 07/21/2016 -->
+<!-- Final Project form -->
+<html lang="en">
+	<head>
+		<title>CSS Best Practices :: Form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" media="screen" href="../css/styles.css" />
+		<link rel="stylesheet" media="print" href="../css/print.css" />
+		<link rel="icon" type="image/x-icon" href="../image.ico" />
+		<!--[if lt IE 9] >
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style>
+			input {
+				margin: 5px 0;
+			}
+			form ul {
+				list-style-type: none;
+				margin: 0;
+			}
+			form li {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="top">
+				<h1>CSS Best Practices</h1>
+				<h2>Feedback Form</h2>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="../final1.html">Home</a></li>
+					<li><a href="final2.html">Coding Practices</a></li>
+					<li><a href="final3.html">Style Guidelines</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+			</nav>
+			<main>
+				<h3>Use this form to give any feedback you might have.</h3>
+				<img id="thankyou" src="../img/thankyou.png" alt="Thanks for your feedback" />
+				<form method="post" action="placeholder.php">
+					<label for="myText">Your Name:</label>
+					<input type="text" id="myText" name="myText" /><br />
+					<label for="myDate">Contact Date:</label>
+					<input type="date" id="myDate" name="myDate" /><br />
+					Select the browsers you use:<br />
+					<ul>
+						<li><label><input type="checkbox" name="IE" id="IE" value="yes">Internet Explorer</label></li>
+						<li><label><input type="checkbox" name="edge" id="edge" value="yes">Microsoft Edge</label></li>
+						<li><label><input type="checkbox" name="firefox" id="firefox" value="yes">Mozilla Firefox</label></li>
+						<li><label><input type="checkbox" name="chrome" id="chrome" value="yes">Google Chrome</label></li>
+						<li><label><input type="checkbox" name="safari" id="safari" value="yes">Apple Safari</label></li>
+						<li><label><input type="checkbox" name="opera" id="opera" value="yes">Opera</label></li>
+					</ul><br />	
+					<label for="fbrowser">Select your favorite browser:</label>
+					<select size="1" name="fbrowser" id="fbrowser">
+						<option value="IE">Internet Explorer</option>
+						<option value="edge">Microsoft Edge</option>
+						<option value="firefox">Mozilla Firefox</option>
+						<option value="chrome">Google Chrome</option>
+						<option value="safari">Apple Safari</option>
+						<option value="opera">Opera</option>
+					</select> <br /><br />
+					How did you find this site?
+					<ul>
+						<li><label><input type="radio" name="referrer" id="refsearch" value="search">Web Search</label></li>
+						<li><label><input type="radio" name="referrer" id="refforum" value="forum">Web Forums</label></li>
+						<li><label><input type="radio" name="referrer" id="reffriend" value="friend">A Friend</label></li>
+					</ul><br />
+					<textarea name="comments" id="comments" cols="40" rows="4">Please enter any additional comments here</textarea><br />
+					<input type="submit" value="Submit" />
+					<input type="reset" value="Clear" />
+				</form>
+				<a class="top" href="#top">Return to top of page</a>
+			</main>
+			<footer>
+				<ul>
+					<li><a href="../final1.html">Home</a></li>
+					<li><a href="final2.html">Coding Practices</a></li>
+					<li><a href="final3.html">Style Guidelines</a></li>
+					<li><a href="final4.html">Credits</a></li>
+					<li><a href="final5.html">Feedback</a></li>
+				</ul>
+				<p>&copy; 2016 Jeremiah Cooley</p>
+			</footer>
+		</div>
+	</body>
+</html>
